@@ -1,205 +1,141 @@
-@import  "//fonts.googleapis.com/css?family=Montserrat";
-
-html {
-  height: 100%;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-  width: auto;
-  height: auto;
-  min-height: 100%;
-  font-family: "Montserrat",sans-serif;
-  line-height: 1.42857;
-  font-size: 17px;
-  background-color: rgba(0,0,0,1);
-  color: #FFF;
-  word-wrap: normal;
+
+  /* Parallax effect */
+  background-image: url("https://images.unsplash.com/photo-1593814681464-eef5af2b0628?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: auto;
 }
 
-a,a:visited,a:active,a:hover {
-  color: #FFF;
+header {
+  background-color: #16555d;
+  color: #f9f5f1;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+  background-color: rgba(
+    249,
+    245,
+    241,
+    0.9
+  ); /* Adding a slight transparency to let the background shine through */
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+  color: #2c99a7;
+}
+
+section#about p,
+section#contact p {
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 25px; /* Add more spacing at the bottom */
+}
+
+a {
+  color: #ed8c52;
+  text-decoration: none;
+}
+
+a:hover {
   text-decoration: underline;
 }
 
-section {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  position: relative;
-}
-
-.bg-image {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  content: "";
-  z-index: 0;
-}
-
-.form-horizontal .form-group {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.form-horizontal .btn {
-  display: block;
-  margin: 0 auto;
-}
-
-.user-signup__submit {
-  line-height: .5em;
-}
-
-.user-signup__form {
-  margin-left: -5px;
-}
-
-.user-signup__form-group {
-  padding: 0 0 0 5px;
-  position: relative;
-}
-
-@media all and (max-width: 767px) {
-  .form-horizontal .mt-table,.form-horizontal .mt-table--full,.form-horizontal .mt-table--centered,.form-horizontal .mt-table--full,.form-horizontal .mt-td--centered-vertical {
-    display: block;
-  }
-}
-
-@media all and (min-width: 768px) {
-  .form-horizontal .user-signup__col-2 {
-    width: 1%;
-  }
-}
-
-.floating-signup__wrap {
-  position: fixed;
-  z-index: 5;
+footer {
+  background-color: #16555d;
+  color: #2c99a7;
+  text-align: center;
   padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  clear: both;
 }
 
-.floating-signup {
-  position: relative;
-  padding: 10px 20px;
-}
-
-.floaty-vertical--middle {
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-@media all and (max-width: 480px) {
-  .floaty-unfloat-at--xs.floating-signup__wrap {
-    position: static;
-    display: block;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: auto;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    float: none;
-  }
-}
-
-.insert--image {
-  display: block;
-  position: relative;
-}
-
-.insert--image.wrap-off-align-center {
+.fade-image {
+  width: 250px; /* Constrain width */
+  max-width: 100%; /* Ensures responsiveness on smaller screens */
+  opacity: 0;
+  transition: opacity 1s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 10px; /* Rounded edges for aesthetics */
+  margin: 20px 0; /* Space above and below the image */
+  display: block; /* To center it */
   margin-left: auto;
   margin-right: auto;
 }
 
-.spacer {
-  z-index: 0;
-  width: 2.52px;
-  margin-bottom: -15px;
-  margin-top: -15px;
+#toggleExplore {
+  background-color: #16555d;
+  color: #f9f5f1;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: absolute; /* absolute position */
+  top: 10px; /* slight margin from the top */
+  left: 10px; /* slight margin from the left */
 }
 
-.clean-hr {
-  z-index: 0;
-  width: 100%;
-  max-width: 579.5px;
-  margin-top: 28px;
-  margin-bottom: 28px;
+#toggleExplore:hover {
+  background-color: #2c99a7;
 }
 
-.m-lg-v {
-  margin-top: 30px;
-  margin-bottom: 30px;
+.swiper-container {
+  width: 100%; /* or any width you'd like, can be fixed value like 600px */
+  height: 300px; /* adjust this based on your preference */
+  margin: 0 auto; /* centers the carousel horizontally if it's less than 100% width */
+  overflow: hidden;
 }
 
-.mt-table,.mt-table--full {
-  display: table;
+.swiper-slide {
+  display: flex; /* centers the image inside the slide */
+  align-items: center;
+  justify-content: center;
 }
 
-.mt-table--full {
-  width: 100%;
+.swiper-slide img {
+  width: auto; /* maintain original image width */
+  max-width: 100%; /* ensure image doesn't exceed slide/container width */
+  height: auto; /* maintain original image height */
+  max-height: 100%; /* ensure image doesn't exceed slide/container height */
 }
 
-.mt-td,.mt-td--centered-vertical {
-  display: table-cell;
+.swiper-pagination-bullet-active {
+  background: #2c99a7; /* Color for the active bullet */
+}
+.swiper-pagination-bullet {
+  width: 8px; /* Adjust size of the bullet */
+  height: 8px;
+  background: #16555d; /* Color of bullet */
 }
 
-.mt-td--centered-vertical {
-  vertical-align: middle;
+.main-container {
+  max-width: 1200px; /* Adjust based on your preference */
+  margin: 0 auto; /* This centers the container */
+  padding: 0 20px; /* Adds some space on the sides for smaller screens */
 }
 
-.loading-state {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  background: url(/res/loading.gif) 50% 45% no-repeat;
-}
-
-.rel {
-  position: relative;
-}
-
-.bg-image {
-  /* photo from: https://www.pexels.com/photo/dawn-landscape-mountains-nature-1852/ */
-  background-image: url(/res/background.jpg);
-  background-attachment: scroll;
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  opacity: .69;
-}
-
-h1 {
-  font-size: 40px;
-}
-
-.form-control__input {
-  border-width: 0;
-  border-radius: 0;
-  font-size: 14px;
-  height: 50px;
-}
-
-.user-signup__submit {
-  border-width: 0;
-  border-radius: 0;
-  font-size: 14px;
-  padding-right: 20px;
-  padding-left: 20px;
-  height: 50px;
-  background-color: #00a651;
-  color: #FFF;
-}
-
-.user-signup__submit:hover {
-  background-color: #1cd861;
-  color: #FFF;
-}
 
 @media all and (min-width:481px) {
   p {

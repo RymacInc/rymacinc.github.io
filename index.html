@@ -7,37 +7,52 @@
     <meta name="keywords" content="Rymac, Tome, AI, Vision, Trading Cards, Startup" property="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1" property="viewport">
     <meta name="og:title" content="Rymac Technical Solutions Inc." property="og:title">
-    <meta name="og:description" content="A pure client-side landing page template that you can freely fork, customize, host and link to your own domain name (e.g. using Github Pages). Relies on Mailchimp (for user email subscriptions) and Google Analytics (for stats)." property="og:description">
-    <meta name="og:image" content="" property="og:image">
+    <meta name="og:description" content="Homepage website describing the start-up company Rymac." property="og:description">
     <link rel="icon" href="favicon.ico">
-    <link type="text/css" rel="stylesheet" href="./res/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link type="text/css" rel="stylesheet" href="./res/styles.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./res/scripts.js"></script>
   </head>
   <body>
-    <div class="bg-image"></div>
-    <div>
-      <div id="loading" class="loading-state" style="display: none;"></div>
-      <div>
-        <section>
-          <div class="floating-signup__wrap col-xs-12 col-md-6 col-xs-offset-0 col-md-offset-3 floaty-vertical--middle floaty-horizontal--center floaty-unfloat-at--xs">
-            <div class="floating-signup rel">
-              <div class="container-fluid rel">
-                <div class="row">
-                  <div class="user-signup__intro">
-                    <h1 style="text-align: center;">Rymac Technical Solutions Inc.</h1>
-                    <p style="text-align: center;">
-                      <img src="/res/spacer.png" alt="" class="spacer insert--image wrap-off-align-center"><br>
-                    </p>
-                    <p style="text-align: center;">Rymac Technical Solutions Inc., or Rymac, is an Alberta, Canada based technology company that helps reduce the time and resources small-to-medium enterprises (SMEs) and individuals spend managing large collections of collectible items.</p>
-                    <p style="text-align: center;">Rymac’s approach uses a computer vision model trained using Artificial Intelligence (AI) to replace the extensive manual labour required by these businesses to process items, operations that involve sorting, cataloging, storing, and ultimately retrieval. </p>
-                    <p style="text-align: center;">The primary focus of Rymac’s business is to reduce the inefficiencies in the emerging niche market of collectible items which is currently burdened by outdated methodologies. This market is occupied by a rapidly expanding, yet close knit, community which is filled with extremely passionate consumers and SMEs. It is Rymac’s desire to assist these businesses and individuals grow alongside their market. </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <header>
+      <button id="toggleExplore">Our Services</button>
+      <h1>Rymac Technical Solutions Inc.</h1>
+    </header>
+    <div class="main-container">
+    <main>
+      <div class="parallax"></div>
+      <div id="aboutContent">
+  
+        <section id="about">
+          <h2>About Us</h2>
+          <p>Rymac Technical Solutions Inc., or Rymac, is an Alberta, Canada based technology company that helps reduce the time and resources small-to-medium enterprises (SMEs) and individuals spend managing large collections of collectible items.</p>
+          <p>Rymac’s approach uses a computer vision model trained using Artificial Intelligence (AI) to replace the extensive manual labour required by these businesses to process items, operations that involve sorting, cataloging, storing, and ultimately retrieval.</p>
+          <p>The primary focus of Rymac’s business is to reduce the inefficiencies in the emerging niche market of collectible items which is currently burdened by outdated methodologies. This market is occupied by a rapidly expanding, yet close knit, community which is filled with extremely passionate consumers and SMEs. It is Rymac’s desire to assist these businesses and individuals grow alongside their market.</p>
+        </section>
+        <div class="swiper-container">
+    <div class="swiper-wrapper">
+    <!-- Slides -->
+      <div class="swiper-slide"><img src="https://cdn.discordapp.com/attachments/214654366144135168/1161807142748160000/Tome_Website.png?ex=6539a438&is=65272f38&hm=58e2dfa0442e128ebdb20ef341ec296061b6fffb48c4fe7753fca23c04bf5875&" alt="Description 1"></div>
+      <div class="swiper-slide"><img src="https://cdn.discordapp.com/attachments/214654366144135168/1161808463710662707/image.png?ex=6539a573&is=65273073&hm=4ee392bd27ec8b2d07ab07691283d93f34e653775295ac4d490ccce957e1bcdd&" alt="Description 2"></div>
+      <div class="swiper-slide"><img src="https://cdn.discordapp.com/attachments/214654366144135168/1161808463991685213/image.png?ex=6539a573&is=65273073&hm=5f78d696e85e1408e1a8e97af78ada6715c12a59a7af799d2f34e94415f7fb9e&" alt="Description 2"></div>
+      <div class="swiper-slide"><img src="https://cdn.discordapp.com/attachments/214654366144135168/1161808464465633340/image.png?ex=6539a573&is=65273073&hm=f104d5bca3dea10c8b4910149c45e7cce2c58db3a595932e0df6db75fd2cb944&" alt="Description 2"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+      </div>
+      <div id="exploreContent" style="display: none;">
+        <section id="contact">
+          <h2>Rymac Services</h2>
+          <p><a href="https://tome.solutions" target="_blank"><b>Tome</b> </a>: Storefront system for inventory management that uses our vision A.I.</p>
+          <p><b>Deckard</b>: W.I.P. Fully automated inventory management technology that uses A.I. and robotics.</p>
+          <p><b>Scrolls</b>: W.I.P Data that uses algorithms and analytics to provide information that suits a store's individual needs.</p>
         </section>
       </div>
-    </div>
+    </main>
+  </div>
+    <footer>
+      <p>&copy; 2023 Rymac Technical Solutions Inc.</p>
+    </footer>
   </body>
 </html>
