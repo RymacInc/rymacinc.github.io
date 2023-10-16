@@ -71,19 +71,6 @@ footer {
   clear: both;
 }
 
-.fade-image {
-  width: 250px; /* Constrain width */
-  max-width: 100%; /* Ensures responsiveness on smaller screens */
-  opacity: 0;
-  transition: opacity 1s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  border-radius: 10px; /* Rounded edges for aesthetics */
-  margin: 20px 0; /* Space above and below the image */
-  display: block; /* To center it */
-  margin-left: auto;
-  margin-right: auto;
-}
-
 #toggleExplore {
   background-color: #16555d;
   color: #f9f5f1;

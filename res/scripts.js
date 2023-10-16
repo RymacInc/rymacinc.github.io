@@ -1,27 +1,3 @@
-const images = document.querySelectorAll(".fade-image");
-
-window.addEventListener("scroll", fadeInOut);
-
-function fadeInOut() {
-  images.forEach((img) => {
-    const imgTop = img.offsetTop;
-    const imgHeight = img.clientHeight;
-    const windowBottom = window.innerHeight + window.scrollY;
-
-    if (
-      imgTop < windowBottom - imgHeight / 2 &&
-      imgTop + imgHeight > window.scrollY + imgHeight / 2
-    ) {
-      img.style.opacity = "1";
-    } else {
-      img.style.opacity = "0";
-    }
-  });
-}
-
-// Initial call to function to adjust opacities based on starting scroll position
-fadeInOut();
-
 const toggleBtn = document.getElementById("toggleExplore");
 const aboutContent = document.getElementById("aboutContent");
 const exploreContent = document.getElementById("exploreContent");
